@@ -23,6 +23,7 @@ class MyTestClass {
   get myProp3() {
     return 'instanceProp';
   }
+
 }
 
 export { MyTestClass };

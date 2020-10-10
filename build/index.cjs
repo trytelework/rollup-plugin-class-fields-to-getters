@@ -25,6 +25,7 @@ class MyTestClass {
   get myProp3() {
     return 'instanceProp';
   }
+
 }
 
 console.log(MyTestClass);
