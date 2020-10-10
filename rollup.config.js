@@ -1,6 +1,6 @@
 /** @license MIT */
 
-const disablePackages = require('.');
+const thisPlugin = require('.');
 
 module.exports = [
   {
@@ -9,7 +9,7 @@ module.exports = [
       file: 'build/index.mjs',
       format: 'esm',
     },
-    plugins: [ disablePackages('chalk', 'fsevents') ],
+    plugins: [ thisPlugin() ],
   },
   {
     input: 'test/index.cjs',
@@ -17,6 +17,6 @@ module.exports = [
       file: 'build/index.cjs',
       format: 'cjs',
     },
-    plugins: [ disablePackages('chalk', 'fsevents') ],
+    plugins: [ thisPlugin() ],
   },
 ];

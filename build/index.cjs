@@ -1,27 +1,30 @@
 'use strict';
 /** @license MIT */
 
-const chalk = {};
-const chalk1 = {};
-const chalk2 = {};
-const {
-  blue,
-  blueBright
-} = {};
-console.log(chalk.blue('hello'), chalk1.blue('test'), chalk2.blue('test'));
-console.log(blue('test'), blueBright('test'));
-const TEST = {
-  a: 42,
-  b: 42
-};
-const TEST_COPY = { ...TEST
-};
-console.log(TEST_COPY);
+class MyTestClass {
+  static get myStaticProp1() {
+    return 'staticProp';
+  }
 
-(function () {
-  (function () {
-    (function () {
-      console.log({});
-    })();
-  })();
-})();
+  static get myStaticProp2() {
+    return 'staticProp';
+  }
+
+  static get myStaticProp3() {
+    return 'staticProp';
+  }
+
+  get myProp1() {
+    return 'instanceProp';
+  }
+
+  get myProp2() {
+    return 'instanceProp';
+  }
+
+  get myProp3() {
+    return 'instanceProp';
+  }
+}
+
+console.log(MyTestClass);

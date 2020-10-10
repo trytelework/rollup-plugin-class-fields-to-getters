@@ -7,9 +7,7 @@
   "license": "MIT",
   "dependencies": {
     "@babel/core": "^7.11.1",
-    "@babel/generator": "^7.11.0",
-    "@babel/parser": "^7.11.3",
-    "@babel/traverse": "^7.11.0"
+    "@babel/plugin-syntax-class-properties": "^7.10.4"
   },
   "scripts": {
     "test": "rollup -c"

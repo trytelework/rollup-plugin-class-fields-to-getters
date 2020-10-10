@@ -1,16 +1,28 @@
-const fsevents = {};
-const chalk = {};
-const blue = {};
-const blueBright = {};
 /** @license MIT */
+class MyTestClass {
+  static get myStaticProp1() {
+    return 'staticProp';
+  }
 
-console.log(chalk.blue('hello'));
-console.log(blue('test'), blueBright('test'));
-const TEST = {
-  a: 42,
-  b: 42
-};
-const TEST_COPY = { ...TEST
-};
-console.log(TEST_COPY);
-console.log(fsevents);
+  static get myStaticProp2() {
+    return 'staticProp';
+  }
+
+  static get myStaticProp3() {
+    return 'staticProp';
+  }
+
+  get myProp1() {
+    return 'instanceProp';
+  }
+
+  get myProp2() {
+    return 'instanceProp';
+  }
+
+  get myProp3() {
+    return 'instanceProp';
+  }
+}
+
+export { MyTestClass };

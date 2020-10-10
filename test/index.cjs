@@ -1,22 +1,14 @@
 /** @license MIT */
+/* eslint-disable require-jsdoc */
+'use strict';
 
-const chalk = require( 'chalk' );
-const chalk1 = require( 'chalk' );
-const chalk2 = require( 'chalk' );
+class MyTestClass {
+  static myStaticProp1 = 'staticProp';
+  static myStaticProp2 = 'staticProp';
+  static myStaticProp3 = 'staticProp';
+  myProp1 = 'instanceProp';
+  myProp2 = 'instanceProp';
+  myProp3 = 'instanceProp';
+}
 
-const { blue, blueBright } = require( 'chalk' );
-
-console.log(chalk.blue('hello'), chalk1.blue('test'), chalk2.blue('test'));
-console.log(blue('test'), blueBright('test'));
-
-const TEST = { a: 42, b: 42 };
-const TEST_COPY = { ...TEST };
-console.log(TEST_COPY);
-
-(function() {
-  (function() {
-    (function() {
-      console.log(require('chalk'));
-    })();
-  })();
-})();
+console.log(MyTestClass);
